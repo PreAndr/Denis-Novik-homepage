@@ -1,0 +1,434 @@
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/lato-v17-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  body{
+      font-family: 'Lato';
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: normal;
+      color: #070707;
+      
+      
+    }
+
+  html{
+      box-sizing:border-box;
+    }
+
+  *,*::before,*::after{
+      box-sizing: inherit;
+    }
+ /* header styles*/
+
+
+  .wrapper{
+      max-width: 940px;   /* максимальная ширина страницы */
+      margin: 0 auto;
+    }
+
+  .header{
+      position: fixed;        /* это чтоб закрепить строку навигации вверху при промотке */
+      top: 0;
+      left: 0;
+      width: 100%; 
+      z-index:1  /* указал для порядка наложения тоесть этот будет поверх всех*/
+
+    }
+  .header_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content:center;
+      padding-top: 32px;  /* отступ сверху*/
+      position: absolute;
+            
+     }
+
+  .header_nav{
+    padding-bottom: 31px;
+    border-bottom: 1px solid #828282;
+     }
+
+  .header_list{
+      display:flex;
+      flex-wrap: wrap;
+          
+    }
+
+  .header_item{
+      margin-right: 155px;  /* отступы между навигационными словами*/
+    
+    }
+  
+  .header_item:last-child{
+      margin-right: 0;
+    }
+
+  .header_link{
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    text-decoration: none;   /* убрать нижнее подчеркивание*/
+    }
+
+  .header_link:hover, .header_link:focus, .header_link:active{  /* анимация при наведение на ссылку*/
+      opacity: 0.5;
+    }
+
+
+   /* main styles*/
+
+
+
+
+   .intro_title{
+       max-width: 123px;      /* ограничиваем ширину чтоб текст написался в две строчки*/
+       top: 128px;
+       position:absolute;
+       font-size: 47.3392px;
+    }
+
+
+    .intro_subtytle{
+       
+       max-width: 155px;  
+       position: absolute;
+       left: 46.49%;
+       right: 42.74%;
+       top: 183px;
+       font-size: 18px;    
+    }
+
+    .intro_subtytle2 {
+      max-width: 20px;
+      position: absolute;
+      left: 84%;
+      right: 16%;
+      top: 220px;       
+      font-size: 16px;
+      line-height: 20px;
+      transform: rotate(-90deg);
+     }
+
+    .header_img{
+      position: absolute;
+      width: 943.61px;
+      height: 387px;
+      left: 200px;
+      top: 276.94px;
+
+      
+    }
+
+     .about_me{
+        
+      top: 768px;
+      background: #f6f6f6;
+      position:absolute;
+      width: 1445px;
+      height: 506px;
+      
+    }
+ 
+
+     .title_aboutme{
+      position:absolute;
+      max-width:155px;
+      left: 42%;
+      top: 120px; 
+      font-size: 34px;
+      line-height: 42px;
+      text-align: center;
+
+   }
+      
+
+     .title_text{
+      position: absolute;
+      max-height: 218px;
+      max-width: 485.34px;
+      margin-left: 450px;
+      top: 181px;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+    
+    }
+
+     .title_skills{
+      position: absolute;
+      left: 45.8%;
+      right: 45.59%;
+      top: 1365px;
+      font-size: 34px;
+      line-height: 42px;
+      text-align: center;
+    }
+
+    .programm{
+      position: absolute;
+      left: 42.18%;
+      right: 42.04%;
+      top: 1460px;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    .ph_img{
+      position: absolute;
+      width: 166.46px;
+      height: 206.29px;
+      left: 255.71px;
+      top: 1566.65px;
+    }
+
+    .il_img{
+      position: absolute;
+      width: 166.46px;
+      height: 206.27px;
+      left: 512.42px;
+      top: 1567.67px;
+    }
+
+    .aef_img{
+      position: absolute;
+      width: 166.46px;
+      height: 206.27px;
+      left: 769.13px;
+      top: 1567.67px;
+    }
+
+    .fi_img{
+      position: absolute;
+      width: 166.46px;
+      height: 205.27px;
+      left: 1025.84px;
+      top: 1567.67px;
+
+    }
+
+    .portfolio{
+      position: absolute;
+      width: 1445px;
+      height: 2253px;
+      left: 0px;
+      top: 1884px;
+      background: #F6F6F6;
+    }
+
+    .title_portfolio{
+      position: absolute;
+      left: 42%;
+      top: 112px;
+      font-size: 34px;
+      line-height: 42px;
+      text-align: center;
+    }
+
+    .port_img1{
+      position: absolute;
+      width: 936.24px;
+      height: 510px;
+      left: 257.71px;
+      top: 203px;
+    }
+    
+    .online_shop{
+      position: absolute;
+      left: 37%;
+      right: 40.1%;
+      top: 757px;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      text-decoration-line: underline;
+      
+    }
+
+    .port_img2{
+      position: absolute;
+      width: 936.24px;
+      height: 510px;
+      left: 257.71px;
+      top: 879px;
+    }
+
+    .reebok{
+      position: absolute;
+      left: 37%;
+      right: 42.6%;
+      top: 1445px;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      text-decoration-line: underline;
+    }
+
+    .port_img3{
+      position: absolute;
+      width: 936.24px;
+      height: 510px;
+      left: 257.71px;
+      top: 1567px;
+    }
+
+    .braun{
+     position: absolute;
+     left: 35%;
+     right: 40.65%;
+     top: 2134px;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+     text-decoration-line: underline;
+
+    }
+
+    
+    .title_contacts{
+     position: absolute;
+     left: 44.89%;
+     right: 45.03%;
+     top: 4251px;
+     font-size: 34px;
+     line-height: 42px;
+     text-align: center;
+    }
+
+    .chat{
+     position: absolute;
+     min-width: 150px;   /* задал чтоб при уменьшении масштаба не расплывалась во много строк*/
+     left: 40.86%;
+     right: 40.1%;
+     top: 4314px;
+     font-size: 18px;
+     line-height: 22px;
+     text-align: center;
+    }
+
+    .send_message{
+     position: absolute;
+     width: 180.5px;
+     height: 42px;
+     left: 38%;
+     right: 39%;
+     top: 4388px;
+     
+     margin: auto auto auto auto;
+
+    }
+
+    .send_message:hover{
+     transform: scale(1.04); /* Для анимации при наведении на иконку*/
+    }
+
+    
+    .linkedin{
+     position: absolute;
+     width: 40.17px;
+     height: 40.06px;
+     left: 38%;
+     top: 4516.64px;
+    }
+
+    .linkedin:hover{
+        transform: scale(1.08); /* Для анимации при наведении на иконку*/
+    }
+
+    .instagram{
+     position: absolute;
+     width: 39.11px;
+     height: 40px;
+     left: 45%;
+     top: 4515.78px;
+    }
+
+    .instagram:hover{
+        transform: scale(1.08); /* Для анимации при наведении на иконку*/
+    }
+
+    .behance{
+     position: absolute;
+     width: 40.11px;
+     height: 40px;
+     left: 52%;
+     top: 4516px;
+    }
+
+    .behance:hover{
+        transform: scale(1.08); /* Для анимации при наведении на иконку*/
+    }
+
+    .dribble{
+     position: absolute;
+     width: 39.11px;
+     height: 40px;
+     left: 59%;
+     top: 4515.78px;
+    }
+
+    .dribble:hover{
+     transform: scale(1.08); /* Для анимации при наведении на иконку*/
+    }
+
+    .title_end{
+     position: absolute;
+     left: 41.83%;
+     right: 41.35%;
+     top: 4601px;
+     font-size: 14px;
+     line-height: 17px;
+     text-align: center;
+     color: #828282;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+   
+    
+
+    
+
+
+  
+
+
+
